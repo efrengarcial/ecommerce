@@ -1,0 +1,11 @@
+deployment {
+  deploymentType kubernetes
+  appsFolders [invoice]
+  dockerRepositoryName "deepu105"
+  serviceDiscoveryType no
+  istio autoInjection
+  istioRoute true
+  kubernetesServiceType Ingress
+  kubernetesNamespace jhipster
+  ingressDomain "35.195.81.130.nip.io"
+}
